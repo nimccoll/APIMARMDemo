@@ -1,0 +1,12 @@
+version: 0.0.1   # Required
+apimServiceName: nimccollftaapim   # Required, must match name of an apim service deployed in the specified resource group
+apis:
+    - name: APIMDevOpsTest
+      type: http
+      description: APIMDevOpsTest
+      serviceUrl: http://nimccollfta-samplealgorithm.azurewebsites.net/
+      openApiSpec: http://nimccollfta-samplealgorithm.azurewebsites.net/swagger/docs/v1
+      suffix: APIMDevOpsTest
+      subscriptionRequired: true
+      isCurrent: true
+outputLocation: C:\Data\Source\Demo\APIM\APIMDevOpsTest   # Required, folder the creator will write the templates to
